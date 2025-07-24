@@ -161,7 +161,7 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 def main() -> None:
     """Основная функция для запуска бота."""
     # Важно! Получаем токен из переменной окружения
-    token = os.getenv("TELEGRAM_BOT_TOKEN")
+    token = os.getenv("BOT_TOKEN")
     if not token:
         print("Ошибка: Токен не найден. Пожалуйста, установите переменную окружения TELEGRAM_BOT_TOKEN")
         return

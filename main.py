@@ -194,10 +194,10 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         password = generate_password(config)
         await context.bot.send_message(
             chat_id=query.effective_chat.id,
-                        text=f"Ваш новый пароль:
+            text=f"""Ваш новый пароль:
 `{password}`
 
-Нажмите на него, чтобы скопировать.",
+Нажмите на него, чтобы скопировать.""",
             parse_mode='Markdown'
         )
         message = "⚙️ *Новые настройки для следующего пароля:*"
@@ -230,4 +230,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-      

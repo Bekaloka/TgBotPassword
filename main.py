@@ -193,7 +193,7 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     elif action == GENERATE:
         password = generate_password(config)
         await context.bot.send_message(
-            chat_id=query.effective_chat.id,
+            chat_id=update.effective_chat.id,
             text=f"""Ваш новый пароль:
 `{password}`
 
